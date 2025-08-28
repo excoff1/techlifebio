@@ -116,10 +116,13 @@ header hr {
     color: transparent;
     
 }
-.dev h2 {
+.dev h1 {
     font-weight: 10;
 }
 .mobcollage {
+    display: none;
+}
+.menu {
     display: none;
 }
 @media  screen and (max-width: 500px) {
@@ -127,25 +130,24 @@ header hr {
         background-color: gray;
         flex-direction: wrap;
     }
-    nav ul li {
-        font-size: 7px;
-        margin-left: -5px;
-        
+   header nav ul li {
+        display: none;
     }
     .logo, .logo img {
-        width: 52px;
+        width: 76px;
     }
     header {
         margin-top: 0px;
         width: 100%;
+        height: 11%;
         display: flex;
         justify-content: center;
     }
     .mobcollage, .mobcollage img {
         margin-top: 40px;
         display: flex;
-        width:125px ;
-        height:261px ;
+        width:165px ;
+        height:361px ;
         
     }
     .stat img, .stat {
@@ -155,7 +157,8 @@ header hr {
     .collage {
         display:none;
     }
-     .phone img, .phone {
+     .phone img {
+        margin-top: 50px;
         width:55px ;
         height:170px ;
         border-radius:10px 
@@ -171,12 +174,12 @@ header hr {
         height:321px ;
     }
     .os, .os img {
-        margin-top: 20px;
+        margin-top: 40px;
           width:161px ;
         height:321px ;
         border-radius:10px ;
     }
-    h3,h4 {
+    h2, h3,h4 {
         display: none;
     }
     h2 {
@@ -192,10 +195,27 @@ header hr {
      .dev {
         margin-top: 100px;
     }
+    .dev h1 {
+        font-size: 22px;
+    }
 
     .arrow, .arrow img {
         margin-top: 30px;
         width: 100px;
     }
-
+   .menu {
+    margin-left: 100px;
+    display: flex;
+   }
+   button {
+    background-color: transparent;
+    border: solid white;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+   }
+   button:hover {
+    scale: 1.2;
+   }
 }
