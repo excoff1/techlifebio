@@ -3,7 +3,8 @@
     right: 0;
     left: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 body {
     color: white;
@@ -122,7 +123,10 @@ header hr {
     display: none;
 }
 @media  screen and (max-width: 500px) {
-    
+    body {
+        background-color: gray;
+        flex-direction: wrap;
+    }
     nav ul li {
         font-size: 7px;
         margin-left: -5px;
@@ -138,41 +142,60 @@ header hr {
         justify-content: center;
     }
     .mobcollage, .mobcollage img {
-        margin-top: 10px;
+        margin-top: 40px;
         display: flex;
-        width:61px ;
-        height:231px ;
+        width:125px ;
+        height:261px ;
         
     }
-    .stat img {
+    .stat img, .stat {
         width: 180px;
         height: 151px;
     }
     .collage {
         display:none;
     }
-     .phone img {
-        width:75px ;
+     .phone img, .phone {
+        width:55px ;
         height:170px ;
         border-radius:10px 
     }
-    .prof img {
+    .prof img, .prof {
         width:180px ;
         height:151px ;
         border-radius: 19px;
+        margin-top: 40px;
     }
     .phone, .phone img {
-        width:151px ;
-        height:322px ;
+        width:161px ;
+        height:321px ;
     }
     .os, .os img {
         margin-top: 20px;
-          width:151px ;
-        height:322px ;
+          width:161px ;
+        height:321px ;
         border-radius:10px ;
     }
-    h2,h3,h4 {
+    h3,h4 {
         display: none;
+    }
+    h2 {
+     font-size: 12px;
+    }
+    .yt, .yt a {
+        display: none;
+
+    }
+    .proj, .proj a {
+        display: none;
+    }
+     .dev {
+        margin-top: 100px;
+    }
+
+    .arrow, .arrow img {
+        margin-top: 30px;
+        width: 100px;
     }
 
 }
