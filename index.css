@@ -219,3 +219,15 @@ header hr {
     scale: 1.2;
    }
 }
+button {
+    background-color: transparent;
+    border: solid white;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+   }
+    button:hover {
+    scale: 1.2;
+   }
+
